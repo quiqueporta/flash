@@ -1,4 +1,4 @@
 flash
 =====
 
-Fast file sharing with Flask
+Fast file sharing with Flask (Flask Sharing)

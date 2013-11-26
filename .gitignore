@@ -29,6 +29,3 @@ nosetests.xml
 
 # Translations
 *.mo
-
-# Upload directory
-app/uploads/*

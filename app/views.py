@@ -34,4 +34,5 @@ def uploaded_file(filename):
 @app.route('/list')
 def list_files():
     onlyfiles = [ f for f in os.listdir(app.config['UPLOAD_FOLDER']) if os.path.isfile(os.path.join(app.config['UPLOAD_FOLDER'],f)) ]
+    onlyfiles.remove(".gitignore")
     return render_template("list.html", files=onlyfiles)

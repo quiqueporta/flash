@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sharing files</title>
+    <title>File Sharing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
@@ -9,7 +9,15 @@
   <body>
     <div class="container">
     {% block content %}{% endblock %}
-</div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr />
+                <iframe src="http://ghbtns.com/github-btn.html?user=quiqueporta&repo=flash&type=watch" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+                <iframe src="http://ghbtns.com/github-btn.html?user=quiqueporta&repo=flash&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+                <iframe src="http://ghbtns.com/github-btn.html?user=quiqueporta&repo=flash&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+            </div>
+        </div>
+    </div>
     <script src="{{ url_for('static', filename='js/jquery-1.10.2.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
   </body>
